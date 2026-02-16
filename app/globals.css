@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-theme-bg: var(--t-bg);
+  --color-theme-panel: var(--t-panel);
+  --color-theme-control: var(--t-control);
+  --color-theme-surface: var(--t-surface);
+  --color-theme-border: var(--t-border);
+  --color-theme-text: var(--t-text);
+  --color-theme-text-secondary: var(--t-text-secondary);
+  --color-accent-green: #2EA043;
+  --color-accent-red: #DA3633;
+  --color-accent-blue: #007ACC;
+}
+
+/* Dark (default) */
+:root, [data-theme="dark"] {
+  --t-bg: #1E1E1E;
+  --t-panel: #252526;
+  --t-control: #37373A;
+  --t-surface: #2D2D30;
+  --t-border: #3E3E42;
+  --t-text: #E0E0E0;
+  --t-text-secondary: #A0A0A0;
+}
+
+[data-theme="light"] {
+  --t-bg: #F3F3F3;
+  --t-panel: #FFFFFF;
+  --t-control: #E8E8E8;
+  --t-surface: #F0F0F0;
+  --t-border: #D1D1D1;
+  --t-text: #1E1E1E;
+  --t-text-secondary: #5A5A5A;
+}
+
+[data-theme="midnight"] {
+  --t-bg: #0D1117;
+  --t-panel: #161B22;
+  --t-control: #21262D;
+  --t-surface: #1C2128;
+  --t-border: #30363D;
+  --t-text: #C9D1D9;
+  --t-text-secondary: #8B949E;
+}
+
+[data-theme="solarized"] {
+  --t-bg: #002B36;
+  --t-panel: #073642;
+  --t-control: #0A4050;
+  --t-surface: #094050;
+  --t-border: #2A6070;
+  --t-text: #EEE8D5;
+  --t-text-secondary: #93A1A1;
+}
+
+body {
+  background: var(--t-bg);
+  color: var(--t-text);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
